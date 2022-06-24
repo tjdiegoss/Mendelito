@@ -9,7 +9,7 @@ public class Fachada {
     
     public String recuperarErvilha(Ervilha ervilha){
         
-        ervilha = new Ervilha(0, genotipo, fenotipo);
+        ervilha = new Ervilha(0, null, null);
         verificarCor(ervilha);
         verificarTextura(ervilha);
     return ervilha.toString();
@@ -21,6 +21,16 @@ public class Fachada {
     
     public void verificarTextura(Ervilha e){
     
+    }
+    
+    public String exibirGenotipoCor(){
+    String s = "";
+    return s;
+    }
+    
+    public String exibirGenotipoTextura(){
+    String s = "";
+    return s;
     }
         
     public static void cruzarErvilhas(Ervilha e,Ervilha ee){}
