@@ -11,13 +11,16 @@ public class Teste {
     
     public static void main (String [] args){
     
+        int id = 0;
         String cor = "", casca = "";
         
-        Ervilha ervilha1 = new Ervilha(cor, casca);
+        Ervilha ervilha1 = new Ervilha(id,cor, casca);
+        ervilha1.setId(1);
         ervilha1.setCor("verde");
         ervilha1.setCasca("liso");
         
-        Ervilha ervilha2 = new Ervilha(cor, casca);
+        Ervilha ervilha2 = new Ervilha(id, cor, casca);
+        ervilha2.setId(2);
         ervilha2.setCor("amarela");
         ervilha2.setCasca("rugoso");
         

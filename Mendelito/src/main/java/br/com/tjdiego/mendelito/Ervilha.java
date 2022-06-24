@@ -9,34 +9,46 @@ public class Ervilha {
     
     
     //Atributos
-    private String cor;
-    private String casca;
+    private int id;
+    private Cor cor;
+    private Casca casca;
 
-    public String getCor() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
+
+    public Cor getCor() {
         return cor;
     }
 
-    public void setCor(String cor) {
+    public void setCor(Cor cor) {
         this.cor = cor;
     }
 
-    public String getCasca() {
+    public Casca getCasca() {
         return casca;
     }
 
-    public void setCasca(String casca) {
+    public void setCasca(Casca casca) {
         this.casca = casca;
     }
 
-    public Ervilha(String cor, String casca) {
+    public Ervilha(int id,Cor cor, Casca casca) {
+        this.id = id;
         this.cor = cor;
         this.casca = casca;
     }
 
     @Override
     public String toString() {
-        return "A ervilha " + "possui uma coloração " + cor + 
-                " e uma casca de aspecto " + casca;
+        return "A ervilha " + id + " possui uma coloração " + cor + 
+                " e uma casca de textura " + casca;
     }
 
     
