@@ -50,7 +50,7 @@ public class Ervilha {
     public String toString() {
         return "A ervilha " + id + " possui uma coloração " + 
                 cor.getFenotipo()+ 
-                " e uma casca de textura " + textura.getTextura();
+                " e uma casca de textura " + textura.getFenotipo();
     }
 
     

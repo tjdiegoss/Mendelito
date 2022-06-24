@@ -9,7 +9,7 @@ public class Textura {
     
     private boolean gene1;
     private boolean gene2;
-    private String textura;
+    private String fenotipo;
 
     public boolean isGene1() {
         return gene1;
@@ -32,18 +32,18 @@ public class Textura {
         this.gene2 = gene2;
     }
 
-    public String getTextura() {
-        return textura;
+    public String getFenotipo() {
+        return fenotipo;
     }
 
-    public void setTextura(String textura) {
-        this.textura = textura;
+    public void setFenotipo(String fenotipo) {
+        this.fenotipo = fenotipo;
     }
 
-    public Textura(boolean gene1, boolean gene2, String textura) {
+    public Textura(boolean gene1, boolean gene2, String fenotipo) {
         this.gene1 = gene1;
         this.gene2 = gene2;
-        this.textura = textura;
+        this.fenotipo = fenotipo;
     }
     
     
