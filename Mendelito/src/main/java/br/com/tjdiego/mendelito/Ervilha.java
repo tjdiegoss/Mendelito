@@ -11,7 +11,7 @@ public class Ervilha {
     //Atributos
     private int id;
     private Cor cor;
-    private Casca casca;
+    private Textura textura;
 
     public int getId() {
         return id;
@@ -20,8 +20,6 @@ public class Ervilha {
     public void setId(int id) {
         this.id = id;
     }
-    
-    
 
     public Cor getCor() {
         return cor;
@@ -31,25 +29,31 @@ public class Ervilha {
         this.cor = cor;
     }
 
-    public Casca getCasca() {
-        return casca;
+    public Textura getTextura() {
+        return textura;
     }
 
-    public void setCasca(Casca casca) {
-        this.casca = casca;
+    public void setTextura(Textura textura) {
+        this.textura = textura;
     }
 
-    public Ervilha(int id,Cor cor, Casca casca) {
+    //Construtor
+    public Ervilha(int id, Cor cor, Textura textura) {
         this.id = id;
         this.cor = cor;
-        this.casca = casca;
+        this.textura = textura;
     }
+
+    
 
     @Override
     public String toString() {
-        return "A ervilha " + id + " possui uma coloração " + cor + 
-                " e uma casca de textura " + casca;
+        return "A ervilha " + id + " possui uma coloração " + 
+                cor.getFenotipo()+ 
+                " e uma casca de textura " + textura.getTextura();
     }
+
+    
 
     
     
