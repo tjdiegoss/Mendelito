@@ -11,7 +11,8 @@ public class Teste {
     
     public static void main (String [] args){
     
-        //Primeira ervilha
+        String percentual = "";
+//Primeira ervilha
         String genotipoCor = "";
         String genotipoTextura = "";
         int id = 0;
@@ -101,7 +102,8 @@ public class Teste {
         
         JOptionPane.showMessageDialog(null, ervilha1.toString()+" Genótipo: "
                + genotipoCor+genotipoTextura+"\n"
-        +ervilha2.toString()+" Genótipo: " + genotipoCor2+genotipoTextura2);
+        +ervilha2.toString()+" Genótipo: " + genotipoCor2+genotipoTextura2+"\n"
+        +percentual);
         
         
     }

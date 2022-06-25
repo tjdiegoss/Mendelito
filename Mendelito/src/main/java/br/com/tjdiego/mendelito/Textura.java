@@ -11,6 +11,7 @@ public class Textura {
     private boolean gene2;
     private String fenotipo;
 
+    //getters e setters
     public boolean isGene1() {
         return gene1;
     }
@@ -27,11 +28,6 @@ public class Textura {
         this.gene2 = gene2;
     }
 
-    public Textura(boolean gene1, boolean gene2) {
-        this.gene1 = gene1;
-        this.gene2 = gene2;
-    }
-
     public String getFenotipo() {
         return fenotipo;
     }
@@ -40,6 +36,7 @@ public class Textura {
         this.fenotipo = fenotipo;
     }
 
+    //Construtor
     public Textura(boolean gene1, boolean gene2, String fenotipo) {
         this.gene1 = gene1;
         this.gene2 = gene2;
