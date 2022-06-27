@@ -12,6 +12,7 @@ public class Ervilha {
     private int id;
     private Cor cor;
     private Textura textura;
+    private String stringGenes;
 
     public int getId() {
         return id;
@@ -37,11 +38,22 @@ public class Ervilha {
         this.textura = textura;
     }
 
+    public String getStringGenes() {
+        return stringGenes;
+    }
+
+    public void setStringGenes(String stringGenes) {
+        this.stringGenes = stringGenes;
+    }
+    
+    
+
     //Construtor
-    public Ervilha(int id, Cor cor, Textura textura) {
+    public Ervilha(int id, Cor cor, Textura textura, String stringGenes) {
         this.id = id;
         this.cor = cor;
         this.textura = textura;
+        this.stringGenes = stringGenes;
     }
 
     
@@ -50,7 +62,9 @@ public class Ervilha {
     public String toString() {
         return "A ervilha " + id + " possui uma coloração " + 
                 cor.getFenotipo()+ 
-                " e uma casca de textura " + textura.getFenotipo();
+                " e uma casca de textura " + textura.getFenotipo()+
+                        ". Possuindo a combinação genética: "+
+                        stringGenes;
     }
 
     
