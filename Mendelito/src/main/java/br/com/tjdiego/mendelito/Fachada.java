@@ -6,9 +6,7 @@ package br.com.tjdiego.mendelito;
  */
 public class Fachada {
 
-    /*Textura textura = new Textura(true, true,"");
-    Cor cor = new Cor(true, true, "");
-    Ervilha ervilha = new Ervilha(0, cor, textura);*/
+    
     public Ervilha recuperarErvilha1(Ervilha ervilha) {
 
         String genes = "";
@@ -18,7 +16,7 @@ public class Fachada {
         genes = exibirGenotipoCor(ervilha);
         genes += exibirGenotipoTextura(ervilha);
         ervilha = new Ervilha(1, cor, textura,genes);
-        //ervilha.setStringGenes(genes);
+        
         verificarCor(ervilha);
         verificarTextura(ervilha);
         

@@ -49,12 +49,21 @@ public class Ervilha {
     
 
     //Construtor
+    public Ervilha() {
+        
+    }
+    
+    
+    
     public Ervilha(int id, Cor cor, Textura textura, String stringGenes) {
+        super();
         this.id = id;
         this.cor = cor;
         this.textura = textura;
         this.stringGenes = stringGenes;
     }
+
+   
 
     
 
